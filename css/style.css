@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #d48dcb;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header_link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header_link:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: relative;
+}
+
+.author-info {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: rgb(255, 198, 249);
+    padding: 10px;
+    border: 1px solid #4b002798;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.author-info img {
+    border-radius: 50%;
+}
+
+.task {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, p {
+    color: #333;
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.task4 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    background-color: #333;
+    height: 400px;
+    width: 140px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    flex-direction: column;
+}
+
+.circle{
+    background-color: black;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.circle.red{
+    background-color: brown;
+    box-shadow: 0 0 25px brown;
+}
+
+.circle.yellow{
+    background-color: rgb(255, 207, 49);
+    box-shadow: 0 0 25px  rgb(255, 207, 49);
+}
+
+.circle.green{
+    background-color: rgb(43, 135, 0);
+    box-shadow: 0 0 25px  rgb(43, 135, 0);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Школяреві</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav>
+                <div class="logo" onmouseover="showAuthorinfo()" onmouseout="hideAuthorinfo()">
+                    <img src="image/logo.png" alt="logo" width="100">
+                    <div id="author_info" class="author_info">
+                        <img src="/image/author.jpg" alt="Фото автора" width="100">
+                        <p>Марія Параєва</p>
+                        <p> 19 років</p>
+                    </div>
+                </div>
+                <ul class="header_list">
+                    <li class="header_item">
+                        <a href="index.html" class="header_link">Home</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="student.html" class="header_link">Допомога школяреві</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="finance.html" class="header_link">Допомога фінансисту</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="editor.html" class="header_link">Допомога редактору</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="traffic light.html" class="header_link">Світлофор</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="task1" class="task">
+        <h2>Допомога школяреві</h2>
+        <p>Введіть натуральні числа, щоб знайти найбільше за сумою цифр</p>
+        <input type="text" id="numbersinput" placeholder="Введіть числа через пробіл">
+        <button onclick="findmaxSum()">Знайти</button>
+        <div class="result" id="output" for=""></div>
+    </section>
+    <script src="Scripts/student.js"></script>
+    <script src="Scripts/scripts.js"></script>
+</body>
+</html>

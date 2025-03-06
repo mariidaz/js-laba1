@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Редактору</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav>
+                <div class="logo" onmouseover="showAuthorinfo()" onmouseout="hideAuthorinfo()">
+                    <img src="image/logo.png" alt="logo" width="100">
+                    <div id="author_info" class="author_info">
+                        <img src="/image/author.jpg" alt="Фото автора" width="100">
+                        <p>Марія Параєва</p>
+                        <p> 19 років</p>
+                    </div>
+                </div>
+                <ul class="header_list">
+                    <li class="header_item">
+                        <a href="index.html" class="header_link">Home</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="student.html" class="header_link">Допомога школяреві</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="finance.html" class="header_link">Допомога фінансисту</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="editor.html" class="header_link">Допомога редактору</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="traffic light.html" class="header_link">Світлофор</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="task3" class="task">
+        <h2>Допомога редактору</h2>
+        <p>Обчислити кількість введених слів у тексті</p>
+        <textarea id="textInput" placeholder="Введіть текст"></textarea>
+        <button onclick="countWords()">Підрахувати</button>
+        <div Кількість слів: <span id="wordCount">0</span></div>
+    </section>
+    <script src="Scripts/editor.js"></script>
+    <script src="Scripts/scripts.js"></script>
+</body>
+
+</html>
